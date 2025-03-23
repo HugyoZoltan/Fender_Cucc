@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fender története</title>
+    <link rel="stylesheet" href="css/kerdoiv.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Főoldal</a>
+            <a href="kerdoiv.html" class="active">Kérdőív</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="videok.html">Videók</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo2.0.png" alt="Logo" class="pulsing-logo">
+        </div>
+        Kérdőív
+    </div>
+
+    <div class="content">
+        <form id="guitarSurvey">
+            
+            <label for="experience">Milyen szinten gitározol?</label>
+            <select id="experience" name="experience">
+                <option value="beginner">Kezdő</option>
+                <option value="intermediate">Középhaladó</option>
+                <option value="advanced">Haladó</option>
+            </select>
+            
+            <label for="style">Milyen zenei stílust szeretsz játszani?</label>
+            <select id="style" name="style">
+                <option value="rock">Rock</option>
+                <option value="blues">Blues</option>
+                <option value="jazz">Jazz</option>
+                <option value="classical">Klasszikus</option>
+                <option value="metal">Metal</option>
+            </select>
+            
+            <label>Milyen típusú gitár érdekel?</label>
+            <div>
+                <input type="radio" id="electric" name="guitarType" value="electric">
+                <label for="electric">Elektromos gitár</label>
+            </div>
+            <div>
+                <input type="radio" id="acoustic" name="guitarType" value="acoustic">
+                <label for="acoustic">Akusztikus gitár</label>
+            </div>
+            <div>
+                <input type="radio" id="bass" name="guitarType" value="bass">
+                <label for="bass">Basszusgitár</label>
+            </div>
+            
+            <label for="budget">Mennyit költenél egy új gitárra?</label>
+            <input type="number" id="budget" name="budget" min="0" step="1000">
+            
+            <label for="comment">Van egyéb preferenciád vagy kérdésed?</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+            
+            <button type="submit">Küldés</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        Copyright 2025 | Kajdel Bence
+
+</body>
+
+</html>
